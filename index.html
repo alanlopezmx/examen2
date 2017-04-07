@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0;" name="viewport" />
+    <link rel="shortcut icon" href="themes/UAA/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="http://bdigital.dgse.uaa.mx:8080/xmlui/themes/UAA/images/apple-touch-icon.png" />
+    <meta name="Generator" content="DSpace 4.0" />
+    <link type="text/css" rel="stylesheet" media="screen" href="themes/UAA/lib/css/reset.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="themes/UAA/lib/css/base.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="themes/UAA/lib/css/helper.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="themes/UAA/lib/css/jquery-ui-1.8.15.custom.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="themes/UAA/lib/css/style.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="themes/UAA/lib/css/authority-control.css" />
+    <link type="text/css" rel="stylesheet" media="handheld" href="themes/UAA/lib/css/handheld.css" />
+    <link type="text/css" rel="stylesheet" media="print" href="themes/UAA/lib/css/print.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="themes/UAA/lib/css/media.css" />
+    <link type="application/rss+xml" rel="alternate" href="http://bdigital.dgse.uaa.mx:8080/xmlui/feed/rss_1.0/site" />
+    <link type="application/rss+xml" rel="alternate" href="http://bdigital.dgse.uaa.mx:8080/xmlui/feed/rss_2.0/site" />
+    <link type="application/atom+xml" rel="alternate" href="http://bdigital.dgse.uaa.mx:8080/xmlui/feed/atom_1.0/site" />
+    <link type="application/opensearchdescription+xml" rel="search" href="http://bdigital.dgse.uaa.mx:8080/xmlui/open-search/description.xml" title="DSpace" />
+    <link href="https://file.myfontastic.com/2ya3RtsWH2JLrW43uFRyG3/icons.css" rel="stylesheet">
+    <script type="text/javascript">
+        //Clear default text of empty text areas on focus
+        function tFocus(element) {
+            if (element.value == ' ') {
+                element.value = '';
+            }
+        }
+        //Clear default text of empty text areas on submit
+        function tSubmit(form) {
+            var defaultedElements = document.getElementsByTagName("textarea");
+            for (var i = 0; i != defaultedElements.length; i++) {
+                if (defaultedElements[i].value == ' ') {
+                    defaultedElements[i].value = '';
+                }
+            }
+        }
+        //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+        function disableEnterKey(e) {
+            var key;
+
+            if (window.event)
+                key = window.event.keyCode; //Internet Explorer
+            else
+                key = e.which; //Firefox and Netscape
+
+            if (key == 13) //if "Enter" pressed, then disable!
+                return false;
+            else
+                return true;
+        }
+
+        function FnArray() {
+            this.funcs = new Array;
+        }
+
+        FnArray.prototype.add = function(f) {
+            if (typeof f != "function") {
+                f = new Function(f);
+            }
+            this.funcs[this.funcs.length] = f;
+        };
+
+        FnArray.prototype.execute = function() {
+            for (var i = 0; i < this.funcs.length; i++) {
+                this.funcs[i]();
+            }
+        };
+
+        var runAfterJSImports = new FnArray();
+    </script>
+    <script xmlns:i18n="http://apache.org/cocoon/i18n/2.1" type="text/javascript" src="themes/UAA/lib/js/modernizr-1.7.min.js">
+    </script>
+    <title>Inicio</title>
+</head>
+<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+
+<body>
+  <div id="menu_boton" class="icon-bars"></div>
+  <div id="menu_movil" class="menu_movil">
+    <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/login">Acceso bibliotecario</a>
+    <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/password-login">Accede a tu cuenta</a>
+    <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/community-list">Comunidades y Colecciones</a>
+    <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/browse?type=dateissued">Por Fecha de Publicación</a>
+    <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/browse?type=author">Autores</a>
+    <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/browse?type=title">Títulos</a>
+    <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/browse?type=subject">Materias</a>
+  </div>
+    <!--<![endif]-->
+    <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="ds-main">
+        <div id="ds-header-wrapper">
+            <div class="clearfix" id="ds-header">
+                <a id="ds-header-logo-link" href="index.html">
+                    <span id="ds-header-logo"> </span>
+                    <span id="ds-header-logo-text">ARCHIVO BIBLIOGRÁFICO</span>
+                </a>
+                <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="ds-user-box">
+                    <p>
+                        <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/login">Acceso Bibliotecario</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="ds-trail-wrapper">
+            <ul id="ds-trail">
+                <li class="ds-trail-link first-link last-link">Inicio</li>
+            </ul>
+        </div>
+        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="hidden" id="no-js-warning-wrapper">
+            <div id="no-js-warning">
+                <div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+            </div>
+        </div>
+        <div id="ds-content-wrapper">
+            <div class="clearfix" id="ds-content">
+
+                <div id="ds-body">
+                  <div class="search-wrapper">
+                    <h3>Buscar en el archivo</h3>
+                    <form method="post" action="http://bdigital.dgse.uaa.mx:8080/xmlui/discover">
+                      <input type="text" placeholder="Busca algun libro aqui.">
+                      <input type="submit" value="Buscar">
+                    </form>
+                  </div>
+                    <div id="file_news_div_news" class="ds-static-div primary">
+                        <p class="ds-paragraph"> Este archivo alberga en su interior la producción académica de la Institución, Su contenido se organiza en Comunidades, y Colecciones. </p>
+                    </div>
+                    <h1 class="ds-div-head">Comunidades en DSpace</h1>
+                    <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_artifactbrowser_CommunityBrowser_div_comunity-browser" class="ds-static-div primary">
+                        <p class="ds-paragraph">Elija una comunidad para listar sus colecciones</p>
+                        <ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom">
+                            <!-- External Metadata URL: cocoon://metadata/handle/123456789/1106/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+                            <li class="ds-artifact-item community odd">
+                                <div class="artifact-description">
+                                    <div class="artifact-title">
+                                        <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/handle/123456789/1106">
+                                            <span class="Z3988">COLECCIONES ESPECIALES</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- External Metadata URL: cocoon://metadata/handle/123456789/1/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+                            <li class="ds-artifact-item community even">
+                                <div class="artifact-description">
+                                    <div class="artifact-title">
+                                        <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/handle/123456789/1">
+                                            <span class="Z3988">TESIS</span>
+                                        </a>
+                                    </div>
+                                    <div class="artifact-info">
+                                        <span class="short-description">TESIS de la UAA</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="aspect_discovery_SiteRecentSubmissions_div_site-home" class="ds-static-div primary repository">
+                        <h1 class="ds-div-head">Envíos recientes</h1>
+                        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_SiteRecentSubmissions_div_site-recent-submission" class="ds-static-div secondary recent-submission">
+                            <ul xmlns:oreatom="http://www.openarchives.org/ore/atom/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:atom="http://www.w3.org/2005/Atom" class="ds-artifact-list">
+                                <!-- External Metadata URL: cocoon://metadata/handle/123456789/1318/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+                                <li class="ds-artifact-item odd">
+                                    <div class="artifact-description">
+                                        <div class="artifact-title">
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/handle/123456789/1318">Drenaje con sonda Kehr (t) versus coledocorrafia primaria posterior a la exploración de la vía biliar principal por litiasis</a>
+                                            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=417738&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿
+                </span>
+                                        </div>
+                                        <div class="artifact-info">
+                                            <span class="author">
+<span>Gómez Arambulo, Ramiro</span>
+                                            </span> <span class="publisher-date">(<span class="publisher">Universidad Autónoma de AguascalientesUniversidad Autónoma de Aguascalientes</span>, <span class="date">2017-01-30</span>)</span>
+                                        </div>
+                                        <div class="artifact-abstract"><strong>Resumen:</strong> La litiasis biliar está presente en un 10-15% de la población mundial. El&#13; tratamiento de la coledocolitiasis ha evolucionado de manera significativa en las tres últimas&#13; décadas. En la actualidad, la esfinterotomia
+                                            ...</div>
+                                    </div>
+                                </li>
+                                <!-- External Metadata URL: cocoon://metadata/handle/123456789/1317/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+                                <li class="ds-artifact-item even">
+                                    <div class="artifact-description">
+                                        <div class="artifact-title">
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/handle/123456789/1317">Efectividad de la pirfenidona sistémica para la prevención y disminución de adherencias peritoneales en un modelo experimental</a>
+                                            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=417740&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿
+                </span>
+                                        </div>
+                                        <div class="artifact-info">
+                                            <span class="author">
+<span>Méndez Esparza, Alma Georgina</span>
+                                            </span> <span class="publisher-date">(<span class="publisher">Universidad Autónoma de AguascalientesUniversidad Autónoma de Aguascalientes</span>, <span class="date">2017-01-30</span>)</span>
+                                        </div>
+                                        <div class="artifact-abstract"><strong>Resumen:</strong> Las adherencias peritoneales son una consecuencia de la irritación por infección y/o trauma quirúrgico. El desarrollo de adherencias se ha estudiado ampliamente en las últimas dos décadas. Varias estrategias se
+                                            han empleado ...</div>
+                                    </div>
+                                </li>
+                                <!-- External Metadata URL: cocoon://metadata/handle/123456789/1316/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+                                <li class="ds-artifact-item odd">
+                                    <div class="artifact-description">
+                                        <div class="artifact-title">
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/handle/123456789/1316">Heteronormatividad y discurso pedagógico sobre sexualidad</a>
+                                            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=417788&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿
+                </span>
+                                        </div>
+                                        <div class="artifact-info">
+                                            <span class="author">
+<span>Rangel Bernal, Laura</span>
+                                            </span> <span class="publisher-date">(<span class="publisher">Universidad Autónoma de AguascalientesUniversidad Autónoma de Aguascalientes</span>, <span class="date">2017-01</span>)</span>
+                                        </div>
+                                        <div class="artifact-abstract"><strong>Resumen:</strong> En México, los lineamientos curriculares establecen cómo y bajo qué enfoques se debe abordar la sexualidad en las escuelas de nivel básico, sin embargo, son los docentes quienes trasladan estos contenidos
+                                            a las ...</div>
+                                    </div>
+                                </li>
+                                <!-- External Metadata URL: cocoon://metadata/handle/123456789/1315/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+                                <li class="ds-artifact-item even">
+                                    <div class="artifact-description">
+                                        <div class="artifact-title">
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/handle/123456789/1315">Propuesta de plan de mercadotecnia para una empresa del sector juguetero del Estado de Aguascalientes</a>
+                                            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=417790&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿
+                </span>
+                                        </div>
+                                        <div class="artifact-info">
+                                            <span class="author">
+<span>García Guerra, Adriana</span>
+                                            </span> <span class="publisher-date">(<span class="publisher">Universidad Autónoma de AguascalientesUniversidad Autónoma de Aguascalientes</span>, <span class="date">2017-01</span>)</span>
+                                        </div>
+                                        <div class="artifact-abstract"><strong>Resumen:</strong> En un entorno altamente competitivo como el nuestro en el que las grandes empresas&#13; nacionales e internacionales abarcan la mayor parte de las actividades económicas, es de&#13; vital importancia
+                                            para las micro, ...</div>
+                                    </div>
+                                </li>
+                                <!-- External Metadata URL: cocoon://metadata/handle/123456789/1314/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+                                <li class="ds-artifact-item odd">
+                                    <div class="artifact-description">
+                                        <div class="artifact-title">
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/handle/123456789/1314">Factores de riesgo para desarrollar disfunción renal aguda en pacientes pediátricos con cardiopatías congénitas sometidos a corrección quirúrgica bajo circulación extracorpórea en el Centenario Hospital Miguel Hidalgo</a>
+                                            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=417782&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿
+                </span>
+                                        </div>
+                                        <div class="artifact-info">
+                                            <span class="author">
+<span>Alatorre Orenday, Christian Jonathan</span>
+                                            </span> <span class="publisher-date">(<span class="publisher">Universidad Autónoma de AguascalientesUniversidad Autónoma de Aguascalientes</span>, <span class="date">2017-01-30</span>)</span>
+                                        </div>
+                                        <div class="artifact-abstract"><strong>Resumen:</strong> La circulación extracorpórea (CEC) ha permitido llevar a cabo cirugía cardíaca para la corrección de las cardiopatías congénitas. Se sabe que su empleo es capaz de producir, entre otras alteraciones,
+                                            una respuesta ...</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p id="aspect_discovery_SiteRecentSubmissions_p_recent-submission-view-more" class="ds-paragraph recentSubmissionViewMore">
+                                <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/recent-submissions">Ver más</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="ds-options-wrapper">
+                    <div id="ds-options">
+                        <!--h1 class="ds-option-set-head" id="ds-search-option-head">Buscar en el Repositorio</h1>
+                        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set" id="ds-search-option">
+                            <form method="post" id="ds-search-form" action="http://bdigital.dgse.uaa.mx:8080/xmlui/discover">
+                                <fieldset>
+                                    <input type="text" class="ds-text-field " name="query" />
+                                    <input xmlns:i18n="http://apache.org/cocoon/i18n/2.1" value="Ir" type="submit" name="submit" class="ds-button-field " onclick="&#10;                                        var radio = document.getElementById(&quot;ds-search-form-scope-container&quot;);&#10;                                        if (radio != undefined &amp;&amp; radio.checked)&#10;                                        {&#10;                                        var form = document.getElementById(&quot;ds-search-form&quot;);&#10;                                        form.action=&#10;                                    &quot;/xmlui/handle/&quot; + radio.value + &quot;/discover&quot; ; &#10;                                        }&#10;                                    "
+                                    />
+                                </fieldset>
+                            </form>
+                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover">Búsqueda avanzada</a>
+                        </div-->
+                        <h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set-head">Listar</h1>
+                        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_viewArtifacts_Navigation_list_browse" class="ds-option-set">
+                            <ul class="ds-options-list">
+                                <li>
+                                    <h2 class="ds-sublist-head">Todo DSpace</h2>
+                                    <ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/community-list">Comunidades &amp; colecciones</a>
+                                        </li>
+                                        <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/browse?type=dateissued">Por fecha de publicación</a>
+                                        </li>
+                                        <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/browse?type=author">Autores</a>
+                                        </li>
+                                        <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/browse?type=title">Títulos</a>
+                                        </li>
+                                        <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/browse?type=subject">Materias</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-option-set-head">Mi cuenta</h1>
+                        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_viewArtifacts_Navigation_list_account" class="ds-option-set">
+                            <ul class="ds-simple-list">
+                                <li>
+                                    <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/login">Acceder</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-option-set-head">Discover</h1>
+                        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_discovery_Navigation_list_discovery" class="ds-option-set">
+                            <ul class="ds-options-list">
+                                <li>
+                                    <h2 class="ds-sublist-head">&#x25b6; Autor</h2>
+                                    <!--ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Aguilar+Mercado%2C+Virginia+Ver%C3%B3nica">Aguilar Mercado, Virginia Verónica (2)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Alvarado+Murillo%2C+Ram%C3%B3n+Fernando">Alvarado Murillo, Ramón Fernando (2)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Amador+Rodr%C3%ADguez%2C+Karla+Yuritzi">Amador Rodríguez, Karla Yuritzi (2)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Cabral+Guerrero%2C+Jorge+Enrique">Cabral Guerrero, Jorge Enrique (2)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Cervantes+Herrera%2C+Ana+del+Refugio">Cervantes Herrera, Ana del Refugio (2)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Cervantes+Samaniego%2C+Nadia">Cervantes Samaniego, Nadia (2)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Contreras+Garza%2C+Jos%C3%A9+Daniel">Contreras Garza, José Daniel (2)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Cuellar+Guzm%C3%A1n%2C+Luis+Felipe">Cuellar Guzmán, Luis Felipe (2)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Delgado+Guerrero%2C+Edgar+Gamaliel">Delgado Guerrero, Edgar Gamaliel (2)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Fuentes+Delgado%2C+V%C3%ADctor+Hugo">Fuentes Delgado, Víctor Hugo (2)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/search-filter?field=author">... Ver más</a>
+                                        </li>
+                                    </ul-->
+                                </li>
+                                <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+                                    <h2 class="ds-sublist-head">&#x25b6; Materia</h2>
+                                    <!--ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Mercadotecnia">Mercadotecnia (39)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Medicina+familiar">Medicina familiar (28)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Administraci%C3%B3n">Administración (27)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Diabetes">Diabetes (25)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Valoraci%C3%B3n+de+bienes+ra%C3%ADces">Valoración de bienes raíces (24)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Ratas+como+animales+de+laboratorio">Ratas como animales de laboratorio (22)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Planificaci%C3%B3n+estrat%C3%A9gica">Planificación estratégica (20)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Impuestos">Impuestos (17)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Ingenier%C3%ADa+de+software">Ingeniería de software (17)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Anestesiolog%C3%ADa">Anestesiología (15)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/search-filter?field=subject">... Ver más</a>
+                                        </li>
+                                    </ul-->
+                                </li>
+                                <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+                                    <h2 class="ds-sublist-head">&#x25b6; Fecha de Publicación</h2>
+                                    <!--ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=dateIssued&amp;filter_relational_operator=equals&amp;filter=%5B2010+TO+2017%5D">2010 - 2017 (921)</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/discover?filtertype=dateIssued&amp;filter_relational_operator=equals&amp;filter=%5B2006+TO+2009%5D">2006 - 2009 (302)</a>
+                                        </li>
+                                    </ul-->
+                                </li>
+                            </ul>
+                        </div>
+                        <h1 class="ds-option-set-head" id="ds-feed-option-head">RSS Feeds</h1>
+                        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set" id="ds-feed-option">
+                            <ul>
+                                <li>
+                                    <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/feed/rss_1.0/site" style="background: url(static/icons/feed.png) no-repeat">RSS 1.0</a>
+                                </li>
+                                <li>
+                                    <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/feed/rss_2.0/site" style="background: url(static/icons/feed.png) no-repeat">RSS 2.0</a>
+                                </li>
+                                <li>
+                                    <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/feed/atom_1.0/site" style="background: url(static/icons/feed.png) no-repeat">Atom</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ds-footer-wrapper">
+            <div id="ds-footer">
+                <div id="ds-footer-left">
+                    <a target="_blank" href="http://www.dspace.org/">DSpace software</a> copyright © 2002-2012  <a target="_blank" href="http://www.duraspace.org/">Duraspace</a>
+                </div>
+                <div id="ds-footer-right">
+                    <span class="theme-by">Theme by </span>
+                    <a id="ds-footer-logo-link" href="http://www.uaa.mx" target="_blank" title="@mire NV">
+                        <span id="ds-footer-logo"><img src="themes/UAA/images/UAA/logo3.gif" alt=""> </span>
+                    </a>
+                </div>
+                <div id="ds-footer-links">
+                    <a href="http://bdigital.dgse.uaa.mx:8080/xmlui/contact">Contacto</a>
+                </div>
+                <a xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="hidden" href="http://bdigital.dgse.uaa.mx:8080/xmlui/htmlmap"> </a>
+            </div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        !window.jQuery && document.write('<script type="text/javascript" src="static/js/jquery-1.6.2.min.js"> <\/script>')
+    </script>
+    <script type="text/javascript" src="themes/UAA/lib/js/jquery-ui-1.8.15.custom.min.js">
+    </script>
+    <!--[if lt IE 7 ]>
+<script type="text/javascript" src="/xmlui/themes/UAA/lib/js/DD_belatedPNG_0.0.8a.js?v=1"> </script>
+<script type="text/javascript">DD_belatedPNG.fix('#ds-header-logo');DD_belatedPNG.fix('#ds-footer-logo');$.each($('img[src$=png]'), function() {DD_belatedPNG.fixPng(this);});</script><![endif]-->
+    <script type="text/javascript">
+        runAfterJSImports.execute();
+    </script>
+    <script src="themes/UAA/lib/js/menu.js"></script>
+</body>
+
+</html>
